@@ -1,0 +1,13 @@
+<div
+  class="padre"
+  [ngClass]="hero.color === 'black' ? 'padre--gold' : 'padre--black'"
+>
+  <div
+    class="container"
+    [ngClass]="hero.color === 'black' ? 'container--black' : 'container--gold'"
+  >
+    <h1>{{ hero.title }}</h1>
+    <p>{{ hero.text }}</p>
+    <button (click)="changecolor()">{{ hero.textbutton }}</button>
+  </div>
+</div>
